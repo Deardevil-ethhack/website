@@ -1,0 +1,33 @@
+//- layout.pug
+//- html
+//-   head
+//-     title Free Style Gaming
+//-       script(src='/index.js')
+
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='css/style.css')
+        link(href='https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossorigin='anonymous')
+        title Free Style Gaming
+    style 
+        include ../css/style.css
+
+    body
+    nav.navbar
+    div
+        img.logoimg(src='/img/logo.png' alt='Free Style Gaming')
+    ul.nav
+        li
+        a.active(href='/') HOME
+        li
+        a(href='/about') ABOUT AS
+        li
+        a(href='/contact' target='_blank') CONTACT US
+        block content
+        block foot
+        footer.innerfooter
+            p &copy; 2020 Copyright: FreeStyleGaming.com
+            script(src='/js/index.js')
